@@ -1,0 +1,45 @@
+body {
+	background-color: MistyRose;
+}
+
+header {
+	background-color: RosyBrown;
+	color: Linen;
+	font-family:"Papyrus",Fantasy;
+	line-height: 1.3;
+}
+	
+article {
+	background-color:LavenderBlush;
+	color:RosyBrown;
+	font-family:"Monaco",Monospace;
+	line-height:1;
+	font-size: medium;
+}
+
+section {
+	background-color: LavenderBlush;
+	color: RosyBrown;
+	font-family: "Monaco", Monospace;
+	line-height:1;
+	font-size: large;
+}
+
+a {
+	color:LightCoral;
+	font-family:"Monaco",Monospace;
+	font-size: large;
+
+}
+
+footer {
+	background-color: RosyBrown;
+	color: Linen;
+	font-family:"Monaco",Monospace;
+
+}
+
+hr {
+	border-top: 3px double RosyBrown;
+}
+

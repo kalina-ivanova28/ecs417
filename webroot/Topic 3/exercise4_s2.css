@@ -1,0 +1,25 @@
+body {
+	background-color: MistyRose;
+}
+
+h1 {
+	background-color: RosyBrown;
+	color: Linen;
+	font-family:"Papyrus",Fantasy;
+	line-height: 1.3;
+}
+
+h2 {
+	background-color: RosyBrown;
+	color: Linen;
+	font-family:"Papyrus",Fantasy;
+	line-height: 1.3;
+}
+
+p {
+	background-color:LavenderBlush;
+	color:RosyBrown;
+	font-family:"Monaco",Monospace;
+	line-height:1;
+	font-size: medium;
+}

@@ -1,0 +1,23 @@
+body {
+	font-family:'Monaco',Monospace;
+}
+
+table {
+	text-align:center;
+	border: 1px solid black;
+	width: 100%
+}
+
+td {
+  border: 1px solid black;
+}
+
+th {
+	background-color: Grey;
+	border: 1px solid black;
+}
+
+h1 {
+	background-color: MediumSeaGreen;
+	text-align:center;
+}

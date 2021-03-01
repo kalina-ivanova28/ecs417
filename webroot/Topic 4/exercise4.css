@@ -1,0 +1,25 @@
+p {
+	border: 1pt solid black;
+}
+fieldset {
+	background-color: Tomato;
+}
+form {
+	border: 1px black; 
+}
+legend {
+	background-color: Orange;
+	border: 1pt solid black;
+	text-align: center;
+	padding:2px 500px;
+}
+nav {
+	background-color:white;
+}
+input[type=submit] {
+	background-color: Tomato;
+}
+input[type=reset] {
+	background-color: Tomato;
+}
+

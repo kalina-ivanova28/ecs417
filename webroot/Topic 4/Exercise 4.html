@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercise 4</title>
+  </head>
+  <hgroup>
+      <header>
+        <link rel="reset" href="reset1.css">
+        <link rel="stylesheet" href="exercise4.css">
+      </header>
+  </hgroup>
+  <!-- <form method="GET" action="http://webprojects.eecs.qmul.ac.uk/un300/week4/week4_process.php"> -->
+  <form method="POST" action="http://webprojects.eecs.qmul.ac.uk/un300/week4/week4_process.php">
+  <fieldset>
+      <legend>
+          <h3>Shirt Order Form</h3>
+      </legend>
+    <p>
+            <label>Shirt Size</label><br/>
+            <select name="Shirt_Size">
+            <option>Choose a size</option>
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            </select>
+            <br/>
+            <label>Sleeves</label><br/>
+            <input type="radio" name="Sleeves" value="1" checked>Short <br>
+            <input type="radio" name="Sleeves" value="2">Long 
+            <br/>
+            <label>Choose a Colour</label><br/>
+            <input type="color" name="Color_Choice"> 
+            <br/>
+            <label>Quantity</label><br/>
+            <input type="number" name="Quantity" min="1" max="10"> 
+            <br/>
+            <label>Date Requested</label><br/>
+            <input type="date" name="Date">
+        </p>
+        <p>
+            <label>Name</label><br/>
+            <textarea name="Name" rows="1">
+            </textarea><br/>
+            <label>Email Address</label><br/>
+            <input type="email" name="Email"/><br/>
+            <label>Telephone Number</label><br/>
+            <input type="tel" name="Phone">eg.: 44-207-882-1234
+        </p>
+        <p>
+            <label>Address</label><br/>
+            <input type="text" name="Address"><br/>
+            <label for="city">City</label><br/>
+            <input list="cities" name="City" id="city">
+            <datalist id="cities">
+                <option value="London">
+                <option value="Liverpool">
+                <option value="Birmingham">
+                <option value="Manchester">
+            </datalist><br/>
+            <label>Postcode</label><br/>
+            <input type="text" name="Postcode"><br/>
+        </p>
+        <nav>
+            <label>Please keep me informed about future shirt offerings</label>
+            <input type="checkbox" name="Accept"><br/>
+            <br/>
+            <input type="submit">
+            <input type="reset">
+        </nav>
+    </fieldset>
+    </form>
+</html>

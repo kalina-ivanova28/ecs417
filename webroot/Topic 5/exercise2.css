@@ -1,0 +1,66 @@
+body {
+	font-family:"Lucida Console", "Courier New", monospace;
+}
+header {
+	display:block;
+	background-color:Lavender;
+}
+header nav ul li {
+	display:block;
+	float:right;
+	padding:5pt;
+}
+header nav ul li a {
+	text-decoration:none;
+}
+
+nav {
+	position:absolute;
+	left:0em;
+	top:5em;
+	width:15em;
+}
+div#main{ 
+	margin-left:15em;
+	margin-right:15em;
+}
+aside {
+	position:absolute;
+	right:0em;
+	top: 5em;
+	width:15em;
+}
+section {
+	bolder:1px solid black;
+}
+figure {
+	float:left;
+}
+figcaption {
+	position:absolute;
+	left:8em;
+	
+}
+h3 {
+	display:block;
+	background-color:LavenderBlush;
+}
+#my_hobbies{
+	border:1px solid black;
+	margin:1em;
+	background-color:white;
+	padding:0.5em;
+}
+#my_movies {
+	border:1px solid black;
+	margin:1em;
+	background-color:white;
+	padding:0.5em;
+}
+
+
+
+
+
+
+	

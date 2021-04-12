@@ -1,0 +1,44 @@
+body {
+	font-family:Verdana, sans-serif;
+	background-color:Grey;
+	text-align:center;
+}
+
+header {
+	background-color:DarkSlateGrey;
+	padding:1em;
+}
+
+article {
+	position:absolute;
+	top:14em;
+	left:32em;
+	text-align:center;
+	width:15em;
+	border:1px solid black;
+	padding:1em;
+}
+
+section#Column_Project {
+	position:absolute;
+	top:14em;
+	left:5em;
+	width:20em;
+	background-color:DarkSlateGrey;
+}
+
+section#Bird_Eye {
+	position:absolute;
+	top:14em;
+	left:55em;
+	width:20em;
+	background-color:DarkSlateGrey;
+}
+
+section#Eyes_Old {
+	position:absolute;
+	top:35em;
+	left:55em;
+	width:20em;
+	background-color:DarkSlateGrey;
+}

@@ -1,0 +1,75 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>Blog Page</title>
+    </head>
+    <hgroup>
+      <header>
+        <link rel="reset" href="reset.css">
+        <link rel="stylesheet" href="stylesheet_blogpage.css">
+      </header>
+  </hgroup>
+  <nav>
+    <a href="./viewBlog.php">Blog</a>
+    <a href="./Index.php">Home</a>
+  </nav>
+  <form method="post" action="addPost.php">
+      <fieldset>
+        <legend>Blog Post</legend>
+        <p>
+            <label>Title:</label><br/>
+            <input type="text" name="title" id="title_blogpost"><br/>
+        </p>
+        <p>
+            <label>Text:</label><br/>
+            <textarea rows="10" cols="70" name="text1" id="textarea_blogpost">Write your post here...</textarea><br/>
+        </p>
+        <button type="button" onclick="AreYouSure()" >Clear</button>
+        <button type="button" onclick="ViewPreview()">Preview</button>
+        <input type="submit" id="submit" onclick='preventDefault()'>
+    </fieldset>
+  </form>
+  <div id="preview"></div>
+  <script type='text/javascript'>
+    title_Box=document.getElementById('title_blogpost');
+    text_Box=document.getElementById('textarea_blogpost');
+    function preventDefault(){
+      if ((title_Box.value=="") || (text_Box.value=="")){
+        warning();
+      }
+      
+    }
+
+    function warning(){
+        // if (title_Box.value==""){
+        //     document.getElementById('title_blogpost').style.border="5px solid #B22222";
+        // }
+        // else if (text_Box.value == ""){
+        //     document.getElementById('textarea_blogpost').style.border="5px solid #B22222";
+        // }
+        // else{
+        //     document.getElementById('title_blogpost').style.border="2px solid #B22222";
+        //     document.getElementById('textarea_blogpost').style.border="2px solid #B22222";
+        // }
+
+        alert('You need to add information in the fields.');
+    } 
+    
+    function AreYouSure(){
+      var clear_confirm=confirm("Are you sure you want to delete it?");
+      if(clear_confirm==true){
+        title_Box.value ="";
+        text_Box.value ="";
+      }
+    }
+
+    function ViewPreview(){
+        var d = new Date();
+        title_prev=document.getElementById("title_blogpost").value;
+        text_prev=document.getElementById("textarea_blogpost").value;
+        document.getElementById("preview").innerHTML = d + "<br/>" + title_prev + "<br/>" +text_prev;
+    }
+  </script>
+    
+  
+</html>
